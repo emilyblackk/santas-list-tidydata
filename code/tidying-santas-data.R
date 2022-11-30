@@ -40,4 +40,12 @@ TukeyHSD(aovlist)
 # base R and ggplot.
 boxplot(value~Name, data=mlist)
 
+# Calculating stats is also pretty simple using the aggregate() function
+agglist = aggregate(mlist$value, list(mlist$Name), mean)
+
+# You might run into errors though if you didn't fix the missing data
+# Doing this can help.
+agglist = aggregate(mlist$value, list(mlist$Name), mean, na.rm = T)
+
+
 
