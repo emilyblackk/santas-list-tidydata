@@ -1,5 +1,5 @@
 # Read in list
-list = read.csv(file.choose())
+list = read.csv("raw_data/santa_data_2022.csv")
 
 # Load reshape2 package and melt dataset.
 # Use install.packages(reshape2) if you haven't installed reshape2
@@ -24,6 +24,7 @@ str(list)
 
 # Now lets re-melt the dataset
 mlist = melt(list)
+mlist
 
 # We should also check for missing values. This is easier to do after
 # the dataset has been melted. If there are no missing values, this 
