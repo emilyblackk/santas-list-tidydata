@@ -160,12 +160,4 @@ santa_list_complete <- bind_rows(cleaned_santa_list, #dataframe to bind new rows
 View(santa_list_complete)
 
 #Great - now we've got both our dataframes combined, and it's up to Santa to 
-#fill out the list! 
-
-#Thanks everybody!
-
-
-  
-
-
-
+#fill out the list! No spoilers :) 
